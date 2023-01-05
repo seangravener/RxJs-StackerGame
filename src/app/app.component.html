@@ -1,5 +1,6 @@
 <div class="container" #container>
-  <div class="cell" *ngFor="let cell of grid">
-    {{ cell }}
+  <div class="cell" *ngFor="let cell of grid; index as index">
+    <ng-container *ngIf="n === index">[ ]</ng-container>
+    {{ index }}
   </div>
 </div>
